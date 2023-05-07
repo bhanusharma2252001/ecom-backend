@@ -13,7 +13,7 @@ const cors = require("cors");
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb://127.0.0.1:27017/lamadev")
   .then(() => console.log("DB Connection Successfull!"))
   .catch((err) => {
     console.log(err);
